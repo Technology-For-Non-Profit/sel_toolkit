@@ -7,10 +7,10 @@
   let heading = $state("Good Morning Ninad! What is the topic for today?");
 
   $effect(() => {
+    let topic_name =
+      page.url.searchParams.get("topic_name") ?? "something interesting";
     switch (page.url.pathname) {
       case "/topic":
-        let topic_name =
-          page.url.searchParams.get("topic_name") ?? "something interesting";
         heading = `Fantastic! Lets discuss on ${topic_name} today!`;
         break;
       case "/warmup":
@@ -21,6 +21,9 @@
         break;
       case "/quiz":
         heading = "Its Quiz Time!";
+        break;
+      case "/activity":
+        heading = `Lets head to some amazing activities based on ${topic_name}!`;
         break;
       default:
         heading = "Good Morning Ninad! What is the topic for today?";

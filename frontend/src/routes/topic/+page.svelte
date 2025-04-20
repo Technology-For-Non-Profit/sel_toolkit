@@ -13,7 +13,7 @@
 </script>
 
 <div
-  class="grid grid-cols-4 gap-4 items-center justify-center h-screen bg-gray-100 p-10 r rounded-lg"
+  class="grid grid-cols-4 gap-4 items-center justify-center h-screen bg-gray-100 r rounded-lg px-10 align-top my-auto"
 >
   <!-- <div class="flex items-center justify-between col-span-4 w-full">
     <Button
@@ -42,9 +42,9 @@
     </Label>
   </div> -->
 
-  <div class="flex items-center col-span-4 w-full h-full">
+  <div class="flex col-span-4 w-fit h-screen py-24">
     {#each data as d}
-      <div class="w-full h-full m-2">
+      <div class="w-full h-full m-2 py-24 my-auto">
         <a
           href={`${d.link}?name=${encodeURIComponent(d.name)}&description=${encodeURIComponent(d.description)}&topic_name=${encodeURIComponent(topic_name)}&topic_description=${encodeURIComponent(topic_description)}`}
           class="w-full h-full mx-2"

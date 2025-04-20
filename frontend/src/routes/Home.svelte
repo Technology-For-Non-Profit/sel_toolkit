@@ -15,7 +15,7 @@
   {#each sel_data as topic}
     <a
       href={`/topic?topic_name=${encodeURIComponent(topic.name)}&topic_description=${encodeURIComponent(topic.description)}`}
-      class="w-full h-full"
+      class="w-full h-full transform transition-transform duration-300 hover:scale-105"
     >
       <Banner name={topic.name} description={topic.description} />
     </a>

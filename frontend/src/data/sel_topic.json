@@ -1,56 +1,83 @@
 [
   {
+    "name": "Emotional Resilience",
+    "description": "The ability to bounce back from setbacks and cope with stress in a healthy way. Emotional resilience helps individuals face challenges with confidence and maintain a positive outlook.",
+    "examples": [
+      "Taking deep breaths and staying calm during a tough situation.",
+      "Seeking help from a trusted adult when feeling overwhelmed.",
+      "Learning from mistakes instead of giving up."
+    ]
+  },
+  {
+    "name": "Self-Respect",
+    "description": "Valuing yourself and believing that you deserve kindness and fairness. Self-respect forms the foundation for healthy relationships and responsible behavior.",
+    "examples": [
+      "Standing up for yourself politely when treated unfairly.",
+      "Taking care of your body and mind.",
+      "Saying no to things that make you uncomfortable."
+    ]
+  },
+  {
     "name": "Self-Awareness",
-    "description": "The ability to accurately recognize your emotions, thoughts, and values and understand how they influence your behavior. It involves recognizing your strengths and limitations with a well-grounded sense of confidence and optimism.",
+    "description": "Understanding your own emotions, thoughts, and values and how they influence your actions. Self-awareness helps individuals make better decisions and develop a strong sense of identity.",
     "examples": [
-      "Identifying when you're feeling anxious before a test.",
-      "Recognizing your strength in solving math problems.",
-      "Admitting when you need help or support."
+      "Recognizing when you are feeling angry or sad.",
+      "Reflecting on why you reacted a certain way in a situation.",
+      "Knowing what makes you happy or upset."
     ]
   },
   {
-    "name": "Self-Management",
-    "description": "The ability to regulate your emotions, thoughts, and behaviors in different situations. This includes managing stress, controlling impulses, motivating yourself, and setting and working toward personal goals.",
+    "name": "Growth Mindset",
+    "description": "Believing that your abilities and intelligence can grow with effort and practice. A growth mindset encourages perseverance and a love of learning.",
     "examples": [
-      "Practicing deep breathing to stay calm during a conflict.",
-      "Setting a study schedule and sticking to it.",
-      "Avoiding distractions while doing homework."
+      "Trying again after failing a math test.",
+      "Saying 'I can’t do it yet' instead of 'I can’t do it'.",
+      "Being excited to learn new things, even if they’re hard."
     ]
   },
   {
-    "name": "Social Awareness",
-    "description": "The ability to take the perspective of and empathize with others, including those from diverse backgrounds and cultures. It also involves understanding social and ethical norms for behavior and recognizing family, school, and community resources and supports.",
+    "name": "Taking Initiative",
+    "description": "Taking action without being told and being proactive in solving problems. It shows leadership and responsibility.",
     "examples": [
-      "Understanding how a classmate might feel left out.",
-      "Respecting others’ opinions even if you disagree.",
-      "Recognizing when a friend is uncomfortable and offering help."
+      "Starting your homework without being reminded.",
+      "Helping a classmate clean up without being asked.",
+      "Coming up with a plan to improve your reading skills."
+    ]
+  },
+  {
+    "name": "Relationship Building",
+    "description": "Creating and maintaining healthy and supportive connections with others. It involves communication, trust, and cooperation.",
+    "examples": [
+      "Making a new student feel welcome.",
+      "Working well in a group project.",
+      "Apologizing when you've hurt someone’s feelings."
+    ]
+  },
+  {
+    "name": "Decision Making",
+    "description": "Making thoughtful and responsible choices after considering possible consequences. It helps in achieving goals and solving problems effectively.",
+    "examples": [
+      "Thinking before speaking when angry.",
+      "Choosing to study for a test instead of watching TV.",
+      "Asking for advice before making a big decision."
+    ]
+  },
+  {
+    "name": "Critical Thinking",
+    "description": "Analyzing information logically, questioning assumptions, and making reasoned judgments. Critical thinking encourages curiosity and problem-solving.",
+    "examples": [
+      "Asking why something happens instead of just accepting it.",
+      "Comparing different points of view before forming an opinion.",
+      "Looking for evidence before believing a rumor."
     ]
   },
   {
     "name": "Empathy",
-    "description": "The ability to understand and share the feelings of another. Empathy is crucial in building strong relationships and fostering a supportive environment. It allows individuals to connect on a deeper level, promoting compassion and understanding.",
+    "description": "The ability to understand and share the feelings of others. Empathy strengthens relationships and promotes kindness and compassion.",
     "examples": [
-      "Listening actively to a friend's problems and offering support.",
-      "Volunteering at a local shelter to help those in need.",
-      "Practicing mindfulness to better understand your own emotions."
-    ]
-  },
-  {
-    "name": "Relationship Skills",
-    "description": "The ability to establish and maintain healthy and rewarding relationships with diverse individuals and groups. This includes communicating clearly, listening well, cooperating with others, resisting inappropriate social pressure, negotiating conflict constructively, and seeking and offering help when needed.",
-    "examples": [
-      "Working together with classmates on a group project.",
-      "Resolving a disagreement by calmly discussing both sides.",
-      "Encouraging a friend who is feeling down."
-    ]
-  },
-  {
-    "name": "Responsible Decision-Making",
-    "description": "The ability to make caring and constructive choices about personal behavior and social interactions based on ethical standards, safety, and social norms. It includes evaluating consequences and considering the well-being of oneself and others.",
-    "examples": [
-      "Deciding not to join in teasing someone even if others are doing it.",
-      "Thinking through the pros and cons before making a big decision.",
-      "Reporting unsafe behavior to a trusted adult."
+      "Comforting a friend who is feeling sad.",
+      "Putting yourself in someone else’s shoes during a disagreement.",
+      "Listening carefully when someone is sharing a problem."
     ]
   }
 ]

@@ -6,7 +6,7 @@
   import { Label } from "$lib/components/ui/label/index.js";
   export let title: string;
   export let overview: string;
-  export let details: string; // Use the prop in your component
+  export let details: string[]; // Use the prop in your component
 </script>
 
 <Card.Root
@@ -21,7 +21,7 @@
       <Card.Description>
         <div
           class="text-xl text-center p-4 my-4 border-spacing-1 mx-auto
-             rounded-lg transition-transform duration-300 ease-in-out transform hover:scale-105 flex justify-center items-center"
+               rounded-lg transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-md flex justify-center items-center"
         >
           {@html details}
         </div></Card.Description
