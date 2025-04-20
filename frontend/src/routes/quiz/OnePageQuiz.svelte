@@ -42,6 +42,7 @@
     }}
   />
   <Carousel.Next
+    disabled={quiz_state === "question"}
     onclick={() => {
       quiz_state = "question"; // Reset state on next
     }}
