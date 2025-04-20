@@ -22,7 +22,7 @@
 <div
   class="grid grid-cols-2 gap-2 items-center h-screen bg-gray-100 p-10 r rounded-lg"
 >
-  <div class="flex items-center justify-between col-span-4 w-full">
+  <!-- <div class="flex items-center justify-between col-span-4 w-full">
     <Button
       variant="outline"
       size="icon"
@@ -50,7 +50,7 @@
   </div>
   <div class=" text-center col-span-4">
     <Label class="text-lg">We are discussing on {topic_name}</Label>
-  </div>
+  </div> -->
 
   <div
     class={`flex items-center col-span-2 w-full h-full ${is_idea ? "hidden" : ""} `}

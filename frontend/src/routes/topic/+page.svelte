@@ -15,7 +15,7 @@
 <div
   class="grid grid-cols-4 gap-4 items-center justify-center h-screen bg-gray-100 p-10 r rounded-lg"
 >
-  <div class="flex items-center justify-between col-span-4 w-full">
+  <!-- <div class="flex items-center justify-between col-span-4 w-full">
     <Button
       variant="outline"
       size="icon"
@@ -40,7 +40,7 @@
     <Label class="text-2xl font-bold text-center flex-grow"
       >Fantastic! Lets discuss on {topic_name} today!
     </Label>
-  </div>
+  </div> -->
 
   <div class="flex items-center col-span-4 w-full h-full">
     {#each data as d}

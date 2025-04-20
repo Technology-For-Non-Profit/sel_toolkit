@@ -8,9 +8,9 @@
 <div
   class="grid grid-cols-4 gap-4 items-center justify-center h-screen bg-gray-100 p-10"
 >
-  <Label class="text-2xl font-bold mb-4 col-span-4 text-center">
+  <!-- <Label class="text-2xl font-bold mb-4 col-span-4 text-center">
     Good Morning Ninad! What is our topic for today?
-  </Label>
+  </Label> -->
 
   {#each sel_data as topic}
     <a

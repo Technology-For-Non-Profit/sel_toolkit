@@ -21,7 +21,7 @@
 <div
   class="grid grid-cols-2 gap-2 items-center h-screen bg-gray-100 p-10 r rounded-lg"
 >
-  <div class="flex items-center justify-between col-span-4 w-full">
+  <!-- <div class="flex items-center justify-between col-span-4 w-full">
     <Button
       variant="outline"
       size="icon"
@@ -46,7 +46,7 @@
     <Label class="text-2xl font-bold text-center flex-grow"
       >Lets Discuss some Amazing Way to Warm Up to our Session!</Label
     >
-  </div>
+  </div> -->
   <div class=" text-center col-span-4">
     <Label class="text-lg">We are discussing on {topic_name}</Label>
   </div>

@@ -1,5 +1,32 @@
 [
   {
+    "name": "Self-Awareness",
+    "description": "The ability to accurately recognize your emotions, thoughts, and values and understand how they influence your behavior. It involves recognizing your strengths and limitations with a well-grounded sense of confidence and optimism.",
+    "examples": [
+      "Identifying when you're feeling anxious before a test.",
+      "Recognizing your strength in solving math problems.",
+      "Admitting when you need help or support."
+    ]
+  },
+  {
+    "name": "Self-Management",
+    "description": "The ability to regulate your emotions, thoughts, and behaviors in different situations. This includes managing stress, controlling impulses, motivating yourself, and setting and working toward personal goals.",
+    "examples": [
+      "Practicing deep breathing to stay calm during a conflict.",
+      "Setting a study schedule and sticking to it.",
+      "Avoiding distractions while doing homework."
+    ]
+  },
+  {
+    "name": "Social Awareness",
+    "description": "The ability to take the perspective of and empathize with others, including those from diverse backgrounds and cultures. It also involves understanding social and ethical norms for behavior and recognizing family, school, and community resources and supports.",
+    "examples": [
+      "Understanding how a classmate might feel left out.",
+      "Respecting others’ opinions even if you disagree.",
+      "Recognizing when a friend is uncomfortable and offering help."
+    ]
+  },
+  {
     "name": "Empathy",
     "description": "The ability to understand and share the feelings of another. Empathy is crucial in building strong relationships and fostering a supportive environment. It allows individuals to connect on a deeper level, promoting compassion and understanding.",
     "examples": [
@@ -9,48 +36,21 @@
     ]
   },
   {
-    "name": "Courage",
-    "description": "The ability to face fear, danger, or adversity with confidence and bravery. Courage enables individuals to take risks and stand up for their beliefs.",
+    "name": "Relationship Skills",
+    "description": "The ability to establish and maintain healthy and rewarding relationships with diverse individuals and groups. This includes communicating clearly, listening well, cooperating with others, resisting inappropriate social pressure, negotiating conflict constructively, and seeking and offering help when needed.",
     "examples": [
-      "Speaking up against injustice in a public setting.",
-      "Trying something new despite the fear of failure.",
-      "Standing by a friend in a difficult situation."
+      "Working together with classmates on a group project.",
+      "Resolving a disagreement by calmly discussing both sides.",
+      "Encouraging a friend who is feeling down."
     ]
   },
   {
-    "name": "Self-Respect",
-    "description": "A sense of pride and confidence in oneself that comes from behaving with honor and dignity. Self-respect is essential for maintaining healthy boundaries and self-worth.",
+    "name": "Responsible Decision-Making",
+    "description": "The ability to make caring and constructive choices about personal behavior and social interactions based on ethical standards, safety, and social norms. It includes evaluating consequences and considering the well-being of oneself and others.",
     "examples": [
-      "Refusing to tolerate disrespectful behavior from others.",
-      "Taking care of your physical and mental health.",
-      "Standing firm in your values and beliefs."
-    ]
-  },
-  {
-    "name": "Self-Esteem",
-    "description": "Confidence in one's own worth or abilities. Self-esteem is important for personal growth and achieving goals.",
-    "examples": [
-      "Celebrating your achievements, no matter how small.",
-      "Learning from mistakes without being overly critical of yourself.",
-      "Setting realistic goals and working towards them."
-    ]
-  },
-  {
-    "name": "Happiness",
-    "description": "A state of well-being and contentment. Happiness is often achieved through meaningful relationships, personal growth, and gratitude.",
-    "examples": [
-      "Spending quality time with loved ones.",
-      "Practicing gratitude by writing down things you're thankful for.",
-      "Engaging in activities that bring you joy."
-    ]
-  },
-  {
-    "name": "Generosity",
-    "description": "The quality of being kind and giving. Generosity fosters a sense of community and strengthens relationships.",
-    "examples": [
-      "Donating to a charity or cause you care about.",
-      "Helping a neighbor with a task or chore.",
-      "Sharing your knowledge or skills to help others succeed."
+      "Deciding not to join in teasing someone even if others are doing it.",
+      "Thinking through the pros and cons before making a big decision.",
+      "Reporting unsafe behavior to a trusted adult."
     ]
   }
 ]
