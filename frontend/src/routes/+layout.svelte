@@ -1,39 +1,38 @@
 <script lang="ts">
-
   import Button from "$lib/components/ui/button/button.svelte";
   import Label from "$lib/components/ui/label/label.svelte";
   import { page } from "$app/state";
   import "../app.css";
   let { children } = $props();
-  let heading = $state("Good Morning Ninad! What is the topic for today?");
+  let heading = $state("सुप्रभात निनाद! आज का विषय क्या है?");
 
   $effect(() => {
     let topic_name =
       page.url.searchParams.get("topic_name") ?? "something interesting";
     switch (page.url.pathname) {
       case "/topic":
-        heading = `Fantastic! Lets discuss on ${topic_name} today!`;
+        heading = `बहुत बढ़िया! चलो आज हम ${topic_name} पर चर्चा करें!`;
         break;
       case "/warmup":
-        heading = "Lets Discuss some Amazing Way to Warm Up to our Session!";
+        heading = "चलिए कुछ शानदार तरीकों से अपनी सेशन की शुरुआत करते हैं!";
         break;
       case "/story":
-        heading = "Lets Discuss a Story for our Session!";
+        heading = "चलिए सेशन के लिए एक कहानी पर चर्चा करें!";
         break;
       case "/quiz":
-        heading = "Its Quiz Time!";
+        heading = "चलो क्विज़ खेलते हैं!";
         break;
       case "/activity":
-        heading = `Lets head to some amazing activities based on ${topic_name}!`;
+        heading = `चलिए ${topic_name} पर आधारित कुछ मजेदार गतिविधियाँ करें!`;
         break;
       default:
-        heading = "Good Morning Ninad! What is the topic for today?";
+        heading = "सुप्रभात निनाद! आज का विषय क्या है?";
     }
   });
 </script>
 
 <div
-  class=" align-middle inline-flex bg-gray-300 w-screen"
+  class=" align-middle inline-flex bg-orange-300 w-screen"
   style="padding: 1rem; border-bottom: 1px solid #ddd;"
 >
   <div class="w-fit">
