@@ -5,18 +5,24 @@
   import BannerTitleDescription from "../../lib/components/templates/BannerTitleDescription.svelte";
 
   import { page } from "$app/stores";
-  import data from "../../data/sel_story.json";
+  import json_data from "../../data/sel_story.json";
   import Story from "./story.svelte";
 
-  $: topic_name =
+  import type { PageProps } from "./$types";
+
+  let { data }: PageProps = $props();
+
+  console.log("data in story--->", data);
+
+  let topic_name =
     $page.url.searchParams.get("topic_name") ?? "something interesting";
-  $: topic_description =
+  let topic_description =
     $page.url.searchParams.get("topic_description") ?? "No description";
 
-  let is_idea = false;
-  let current_title: string = "";
-  let current_overview: string = "";
-  let current_detailed_story: string = "";
+  let is_idea = $state(false);
+  let current_title: string = $state("");
+  let current_overview: string = $state("");
+  let current_detailed_story: string = $state("");
 </script>
 
 <div
@@ -55,7 +61,7 @@
   <div
     class={`flex items-center col-span-2 w-full h-full ${is_idea ? "hidden" : ""} `}
   >
-    {#each data as d}
+    {#each data.item as d}
       <a
         href={"#"}
         class="w-full h-4/5 m-4"

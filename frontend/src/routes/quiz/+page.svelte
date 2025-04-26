@@ -2,14 +2,17 @@
   import { on } from "svelte/events";
   import { Label } from "$lib/components/ui/label/index.js";
   import { Button } from "$lib/components/ui/button/index.js";
-  import { page } from "$app/state";
+  import { page } from "$app/stores";
 
   import OnePageQuiz from "./OnePageQuiz.svelte";
+  import type { PageProps } from "./$types";
 
-  $: topic_name =
-    page.url.searchParams.get("topic_name") ?? "something interesting";
-  $: topic_description =
-    page.url.searchParams.get("topic_description") ?? "No description";
+  let { data }: PageProps = $props();
+
+  let topic_name =
+    $page.url.searchParams.get("topic_name") ?? "something interesting";
+  let topic_description =
+    $page.url.searchParams.get("topic_description") ?? "No description";
 </script>
 
 <div class=" bg-gray-100 px-24 text-center align-middle mx-auto h-screen">
@@ -20,6 +23,6 @@
     with the quiz
   </p>
   <div class="bg-grey-700 w-3/6 h-2/6 mx-auto p-1">
-    <OnePageQuiz />
+    <OnePageQuiz data={data.item} />
   </div>
 </div>

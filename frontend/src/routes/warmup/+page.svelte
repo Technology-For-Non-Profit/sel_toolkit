@@ -1,21 +1,26 @@
 <script lang="ts">
-  import { on } from "svelte/events";
   import { Label } from "$lib/components/ui/label/index.js";
-  import { Button } from "$lib/components/ui/button/index.js";
   import BannerTitleDescription from "../../lib/components/templates/BannerTitleDescription.svelte";
   import { page } from "$app/stores";
-  import data from "../../data/sel_warmup.json";
+  import json_data from "../../data/sel_warmup.json";
   import Idea from "./idea.svelte";
+  import type { PageProps } from "./$types";
 
-  $: topic_name =
+  let topic_id =
+    $page.url.searchParams.get("topic_id") ?? "something interesting";
+
+  let topic_name =
     $page.url.searchParams.get("topic_name") ?? "something interesting";
-  $: topic_description =
+
+  let topic_description =
     $page.url.searchParams.get("topic_description") ?? "No description";
 
-  let is_idea = false;
-  let current_idea = "";
-  let current_purpose = "";
-  let current_questions: string[] = [];
+  let { data }: PageProps = $props();
+  let is_idea = $state(false);
+  let current_idea = $state("");
+  let current_purpose = $state("");
+  let current_questions: string[] = $state([]);
+  console.log("The fetched data is ---->", data);
 </script>
 
 <div
@@ -54,7 +59,7 @@
   <div
     class={`flex items-center col-span-2 w-full h-full ${is_idea ? "hidden" : ""} `}
   >
-    {#each data as d}
+    {#each data.item as d}
       <a
         href={"#"}
         class="w-full h-4/5 m-4"

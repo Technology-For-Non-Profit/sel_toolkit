@@ -3,6 +3,7 @@
   import Label from "$lib/components/ui/label/label.svelte";
   import sel_data from "../data/sel_topic.json";
   let cards = ["Card 1", "Card 2", "Card 3"];
+  export let data: any[] = [];
 </script>
 
 <div
@@ -12,9 +13,9 @@
     Good Morning Ninad! What is our topic for today?
   </Label> -->
 
-  {#each sel_data as topic}
+  {#each data as topic}
     <a
-      href={`/topic?topic_name=${encodeURIComponent(topic.name)}&topic_description=${encodeURIComponent(topic.description)}`}
+      href={`/topic?topic_id=${encodeURIComponent(topic.id)}&topic_name=${encodeURIComponent(topic.name)}&topic_description=${encodeURIComponent(topic.description)}`}
       class="w-full h-full transform transition-transform duration-300 hover:scale-105"
     >
       <Banner name={topic.name} description={topic.description} />

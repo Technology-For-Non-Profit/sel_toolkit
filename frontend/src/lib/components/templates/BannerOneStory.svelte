@@ -20,7 +20,7 @@
     <div class="w-full">
       <Card.Description>
         <div
-          class="text-xl text-center p-4 my-4 border-spacing-1 mx-auto
+          class="text-3xl text-center p-4 my-4 border-spacing-1 mx-auto
              rounded-lg transition-transform duration-300 ease-in-out transform hover:scale-105 flex justify-center items-center"
         >
           {@html details}

@@ -6,6 +6,8 @@
   import { page } from "$app/stores";
   import data from "../../data/sel_topic_modules.json";
 
+  $: topic_id =
+    $page.url.searchParams.get("topic_id") ?? "something interesting";
   $: topic_name =
     $page.url.searchParams.get("topic_name") ?? "something interesting";
   $: topic_description =
@@ -46,7 +48,7 @@
     {#each data as d}
       <div class="w-full h-full m-2 py-24 my-auto">
         <a
-          href={`${d.link}?name=${encodeURIComponent(d.name)}&description=${encodeURIComponent(d.description)}&topic_name=${encodeURIComponent(topic_name)}&topic_description=${encodeURIComponent(topic_description)}`}
+          href={`${d.link}?name=${encodeURIComponent(d.name)}&description=${encodeURIComponent(d.description)}&topic_id=${encodeURIComponent(topic_id)}&topic_name=${encodeURIComponent(topic_name)}&topic_description=${encodeURIComponent(topic_description)}`}
           class="w-full h-full mx-2"
         >
           <MediumBanner name={d.name} description={d.description} />

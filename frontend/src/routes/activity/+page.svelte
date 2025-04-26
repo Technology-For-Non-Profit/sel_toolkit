@@ -4,19 +4,26 @@
   import { Button } from "$lib/components/ui/button/index.js";
   import BannerTitleDescription from "../../lib/components/templates/BannerTitleDescription.svelte";
 
-  import { page } from "$app/state";
-  import data from "../../data/sel_activity.json";
+  import { page } from "$app/stores";
+  import json_data from "../../data/sel_activity.json";
   import Activity from "./activity.svelte";
 
-  $: topic_name =
-    page.url.searchParams.get("topic_name") ?? "something interesting";
-  $: topic_description =
-    page.url.searchParams.get("topic_description") ?? "No description";
+  import type { PageProps } from "./$types";
 
-  let is_idea = false;
-  let current_name: string = "";
-  let current_description: string = "";
-  let current_detailed_activity: string[] = [];
+  let { data }: PageProps = $props();
+
+  let topic_id =
+    $page.url.searchParams.get("topic_id") ?? "something interesting";
+
+  let topic_name =
+    $page.url.searchParams.get("topic_name") ?? "something interesting";
+  let topic_description =
+    $page.url.searchParams.get("topic_description") ?? "No description";
+
+  let is_idea = $state(false);
+  let current_name: string = $state("");
+  let current_description: string = $state("");
+  let current_detailed_activity: string[] = $state([]);
 </script>
 
 <div
@@ -55,7 +62,7 @@
   <div
     class={`flex items-center col-span-2 w-full h-full ${is_idea ? "hidden" : ""} `}
   >
-    {#each data as d}
+    {#each data.item as d}
       <a
         href={"#"}
         class="w-full h-4/5 m-4"
