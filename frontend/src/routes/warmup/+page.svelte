@@ -53,7 +53,7 @@
     >
   </div> -->
   <div class=" text-center col-span-4">
-    <Label class="text-lg">We are discussing on {topic_name}</Label>
+    <Label class="text-2xl">हमारा विषय हैं {topic_name}</Label>
   </div>
 
   <div

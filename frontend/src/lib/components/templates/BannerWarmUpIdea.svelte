@@ -16,14 +16,14 @@
     <Card.Title>{idea}</Card.Title>
   </Card.Header>
   <Card.Content>
-    <Card.Description>{purpose}</Card.Description>
+    <Card.Description class="text-center text-2xl">{purpose}</Card.Description>
     <div class="w-full">
       {#each questions as question}
         <Card.Description>
           <div
             class="text-xl text-center p-4 my-4 border-spacing-1
-          border-gray-300 border rounded-lg transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-md"
-            style="background-color: #f0f8ff; color: #333;"
+          border-amber-300 border rounded-lg transition-transform duration-300
+          ease-in-out transform hover:scale-105 hover:shadow-md bg-gray-200 text-black hover:bg-amber-300"
           >
             {question}
           </div></Card.Description

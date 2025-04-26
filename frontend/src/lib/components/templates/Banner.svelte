@@ -9,15 +9,15 @@
 </script>
 
 <Card.Root
-  class="hover:shadow-lg transition-shadow duration-300 w-full h-full cursor-pointer hover:bg-gray-200"
+  class="hover:shadow-lg transition-shadow duration-300 w-full h-full cursor-pointer hover:bg-gray-200 border-amber-200"
   on:click={() => {
     alert("Card clicked");
   }}
 >
   <Card.Header>
-    <Card.Title tag="h6">{name}</Card.Title>
+    <Card.Title class="text-2xl text-amber-600">{name}</Card.Title>
   </Card.Header>
   <Card.Content>
-    <Card.Description>{description}</Card.Description>
+    <Card.Description class="text-lg ">{description}</Card.Description>
   </Card.Content>
 </Card.Root>

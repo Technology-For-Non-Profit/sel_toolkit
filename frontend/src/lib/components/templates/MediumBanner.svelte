@@ -9,12 +9,12 @@
 </script>
 
 <Card.Root
-  class="hover:shadow-lg m-2 transition-shadow duration-300 w-full h-full cursor-pointer hover:bg-gray-200"
+  class="hover:shadow-lg m-2 transition-shadow duration-300 w-full h-full cursor-pointer hover:bg-gray-200 border-amber-200 border-2"
 >
-  <Card.Header>
-    <Card.Title>{name}</Card.Title>
+  <Card.Header class="text-amber-600 ">
+    <Card.Title class="text-2xl">{name}</Card.Title>
   </Card.Header>
   <Card.Content>
-    <Card.Description>{description}</Card.Description>
+    <Card.Description class="text-lg">{description}</Card.Description>
   </Card.Content>
 </Card.Root>

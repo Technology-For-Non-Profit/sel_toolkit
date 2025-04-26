@@ -32,7 +32,7 @@
 </script>
 
 <div
-  class=" align-middle inline-flex bg-orange-300 w-screen"
+  class=" align-middle inline-flex bg-amber-200  w-screen"
   style="padding: 1rem; border-bottom: 1px solid #ddd;"
 >
   <div class="w-fit">

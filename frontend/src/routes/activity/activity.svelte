@@ -12,7 +12,7 @@
   opts={{
     align: "center",
   }}
-  class="w-full text-center px-2 mx-12"
+  class="w-full text-center px-2 mx-12 "
 >
   <p>
     <Label class="text-2xl font-bold m-10 col-span-4 text-center"
@@ -24,16 +24,16 @@
   >
   <Carousel.Content>
     {#each details as d, i (i)}
-      <Carousel.Item class="md:basis-1/2 lg:basis-1/3">
-        <div class="p-1">
+      <Carousel.Item class="md:basis-1/2 lg:basis-1/3 ">
+        <div class="p-1 ">
           <Card.Root>
             <Card.Content
-              class="flex aspect-square items-center justify-center p-6 font-medium"
+              class="flex aspect-square items-center justify-center p-6 font-medium "
             >
               {@html d}
               <span class="text-2xl text-gray-500 self-end text-center mx-auto"
-              >{i + 1}</span
-            >
+                >{i + 1}</span
+              >
             </Card.Content>
           </Card.Root>
         </div>
